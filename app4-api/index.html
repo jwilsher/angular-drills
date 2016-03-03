@@ -1,7 +1,13 @@
 <html ng-app="apiApp">
-	<body>
+	<body ng-controller="myCtrl">
+        Enter in Pokemon Id:
+        <input ng-model="id"></input>
+    
+        <button ng-click="getPokemonName(id)">FIND</button>  <!--This id that is passed in is created by the input on the ng-model from above. What you type into ng-model's input box gets created on the $scope. Also, this function is what we created in the scope in our controller -->
+        
+        {{theName}}  <!--This is referrring to the "theName" variable on the controller -->
 		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

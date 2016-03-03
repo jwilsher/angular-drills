@@ -1,5 +1,11 @@
-<html>
-	<body>
+<html ng-app="app1">
+	<body ng-controller="myCtrl">
+        
+        What is your name? :
+        <input ng-model="names"></input> 
+        {{names}}
+    
+        <!-- <button ng-click="testName()">test name</button> -->
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
